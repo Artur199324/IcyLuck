@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Icy Luck</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hi_there">Hi there</string>
+    <string name="icy_luck">Icy Luck</string>
+    <string name="please_enter_your_name_maximum_8_character">Please,enter your name ,maximum 8 character</string>
+    <string name="name">Name</string>
+    <string name="submit">Submit</string>
+    <string name="main_menu">Main menu</string>
+    <string name="play">Play</string>
+    <string name="shop">Shop</string>
+    <string name="rules">Rules</string>
+    <string name="exit">Exit</string>
+    <string name="back">Back</string>
+    <string name="good_luck">Have fun</string>
+    <string name="_1_rules">1.Buy attempts in shop,and choose (Play button in  main menu)</string>
+    <string name="_2_rules">2.Choose number,and click submit</string>
+    <string name="_3_rules">3.Your number must be closer to randomly choosed,than your opponent</string>
+    <string name="buy_attempt">Buy attempt</string>
+    <string name="easy_mode">Easy mode</string>
+    <string name="increase_chance_by_10">Increase chance by 10%</string>
+    <string name="_0">0</string>
+    <string name="random">Random</string>
+    <string name="opp">opp</string>
+    <string name="loop">loop</string>
+    <string name="opponent">Opponent</string>
+</resources>

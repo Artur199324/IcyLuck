@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ice_margin">30dp</dimen>
+    <dimen name="icy_medium_margin">32dp</dimen>
+    <dimen name="icy_large_margin">64dp</dimen>
+    <dimen name="button_size">100dp</dimen>
+    <dimen name="button_size_big">150dp</dimen>
+
+</resources>

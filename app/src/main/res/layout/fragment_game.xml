@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/fon"
+    tools:context=".GameFragment">
+
+
+    <ImageButton
+        android:id="@+id/ib_arrow_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/ice_margin"
+        android:layout_marginTop="@dimen/ice_margin"
+        android:background="@null"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/back" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ib_attempt_minus"
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+        android:background="@mipmap/frdiamond"
+        android:layout_marginStart="@dimen/icy_medium_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_my_number" />
+
+    <TextView
+        android:id="@+id/tv_my_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/myfont"
+        android:gravity="center"
+        android:shadowColor="#1936C8"
+        android:shadowDx="0.0"
+        android:shadowDy="0.0"
+        android:shadowRadius="50"
+        android:text="@string/_0"
+        android:textColor="@color/teal_700"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ib_attempt_add"
+        app:layout_constraintStart_toStartOf="@+id/ib_attempt_minus"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_random_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/myfont"
+        android:gravity="center"
+        android:shadowColor="#1936C8"
+        android:shadowDx="0.0"
+        android:shadowDy="0.0"
+        android:shadowRadius="50"
+        android:text="@string/_0"
+        android:textColor="@color/teal_700"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+       />
+
+    <TextView
+        android:id="@+id/tv_opp_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/icy_large_margin"
+        android:fontFamily="@font/myfont"
+        android:gravity="center"
+        android:shadowColor="#1936C8"
+        android:shadowDx="0.0"
+        android:shadowDy="0.0"
+        android:shadowRadius="50"
+        android:text="@string/_0"
+        android:textColor="@color/teal_700"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ib_attempt_add"
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+        android:background="@mipmap/frdiamond"
+        android:layout_marginStart="@dimen/icy_medium_margin"
+        android:rotation="180"
+        android:src="@mipmap/frdiamond"
+        app:layout_constraintBottom_toTopOf="@+id/tv_my_number"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_play"
+        android:layout_width="@dimen/button_size_big"
+        android:layout_height="@dimen/button_size_big"
+        android:layout_marginHorizontal="@dimen/ice_margin"
+        android:background="@mipmap/star_image"
+        android:fontFamily="@font/myfont"
+        android:text="@string/play"
+        android:textColor="@color/button_text_color"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ib_attempt_minus" />
+
+    <TextView
+        android:id="@+id/tv_opp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/myfont"
+        android:gravity="center"
+        android:shadowColor="#1936C8"
+        android:shadowDx="0.0"
+        android:shadowDy="0.0"
+        android:shadowRadius="50"
+        android:textColor="@color/teal_700"
+        android:textSize="30sp"
+        android:text="@string/opponent"
+        app:layout_constraintBottom_toTopOf="@+id/tv_opp_number"
+        app:layout_constraintEnd_toEndOf="@+id/tv_opp_number"
+        app:layout_constraintStart_toStartOf="@+id/tv_opp_number" />
+
+    <TextView
+        android:id="@+id/tv_attempt_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ice_margin"
+        android:layout_marginEnd="@dimen/ice_margin"
+        android:fontFamily="@font/myfont"
+        android:gravity="center"
+        android:shadowColor="#1936C8"
+        android:shadowDx="0.0"
+        android:shadowDy="0.0"
+        android:shadowRadius="50"
+        android:text="TextView"
+        android:textColor="@color/teal_700"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_points"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/point_star"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_attempt_show" />
+
+    <TextView
+        android:id="@+id/tv_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/myfont"
+        android:gravity="center"
+        android:shadowColor="#1936C8"
+        android:shadowDx="0.0"
+        android:shadowDy="0.0"
+        android:shadowRadius="50"
+        android:text="@string/_0"
+        android:textColor="@color/teal_700"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_points"
+        app:layout_constraintEnd_toStartOf="@+id/iv_points"
+        app:layout_constraintTop_toTopOf="@+id/iv_points" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

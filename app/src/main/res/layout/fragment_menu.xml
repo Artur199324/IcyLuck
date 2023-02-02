@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/fon"
+    tools:context=".MenuFragment">
+
+
+    <TextView
+        android:id="@+id/tv_main_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/ice_margin"
+        android:fontFamily="@font/myfont"
+        android:gravity="center"
+        android:shadowColor="#1936C8"
+        android:shadowDx="0.0"
+        android:shadowDy="0.0"
+        android:shadowRadius="50"
+        android:text="@string/main_menu"
+        android:textColor="@color/teal_700"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/ice_margin"
+        android:layout_marginTop="@dimen/ice_margin"
+        android:fontFamily="@font/myfont"
+        android:gravity="center"
+        android:shadowColor="#1936C8"
+        android:shadowDx="0.0"
+        android:shadowDy="0.0"
+        android:shadowRadius="50"
+        android:text="@string/main_menu"
+        android:textColor="@color/teal_700"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_main_menu" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_play"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/ice_margin"
+        android:layout_marginStart="@dimen/ice_margin"
+        android:layout_marginTop="@dimen/ice_margin"
+        android:background="@mipmap/star_image"
+        android:fontFamily="@font/myfont"
+        android:text="@string/play"
+        android:textColor="@color/button_text_color"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_shop"
+        app:layout_constraintEnd_toStartOf="@+id/btn_rules"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_user_name" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_shop"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/ice_margin"
+        android:layout_marginStart="@dimen/ice_margin"
+        android:layout_marginTop="@dimen/ice_margin"
+        android:background="@mipmap/star_image"
+        android:fontFamily="@font/myfont"
+        android:text="@string/shop"
+        android:textColor="@color/button_text_color"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_exit"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_play" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_rules"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/ice_margin"
+        android:layout_marginTop="@dimen/ice_margin"
+        android:layout_marginEnd="@dimen/ice_margin"
+        android:background="@mipmap/star_image"
+        android:fontFamily="@font/myfont"
+        android:text="@string/rules"
+        android:textColor="@color/button_text_color"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_exit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_play"
+        app:layout_constraintTop_toBottomOf="@+id/tv_user_name" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_exit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/ice_margin"
+        android:layout_marginEnd="@dimen/ice_margin"
+        android:layout_marginTop="@dimen/ice_margin"
+        android:background="@mipmap/star_image"
+        android:fontFamily="@font/myfont"
+        android:text="@string/exit"
+        android:textColor="@color/button_text_color"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_shop"
+        app:layout_constraintTop_toBottomOf="@+id/btn_rules" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
